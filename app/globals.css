@@ -1,3 +1,147 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+.active {
+  border: solid 2px rgb(0, 132, 15);
+  background-color: rgb(0, 67, 8);
+}
+
+ul {
+  position: inherit;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 67, 8);
+}
+li {
+  z-index: 3;
+  display: flex;
+}
+
+li a {
+  margin-block: 8px;
+  margin-right: 8px;
+
+  background-color: rgb(0, 132, 15);
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-weight: 900;
+
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
+    1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+
+html {
+  background-color: rgb(0, 67, 8);
+  min-width: 1050px;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 1050px;
+}
+.headerImage {
+  position: absolute !important;
+  display: flex;
+  width: 100%;
+
+  height: auto;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+footer {
+  position: absolute;
+  height: 90px;
+  overflow: hidden;
+  display: flex;
+  bottom: 0;
+  margin-top: auto;
+  min-width: 1050px;
+
+  justify-content: center;
+}
+.footerImage {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  z-index: 1;
+}
+
+nav {
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  position: absolute !important;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  height: 100%;
+  width: auto;
+  z-index: 3;
+}
+
+.Facebook {
+  z-index: 10;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-block: 8px;
+  margin-right: 8px;
+  height: 72%;
+  width: auto;
+}
+
+.aFacebook {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.content-wrap {
+  padding-bottom: 10vh;
+}
+
+.footerActive {
+  color: #000000 !important;
+  text-shadow: -1px -1px 0 #ffffff, 0 -1px 0 #ffffff, 1px -1px 0 #ffffff,
+    1px 0 0 #ffffff, 1px 1px 0 #ffffff, 0 1px 0 #ffffff, -1px 1px 0 #ffffff,
+    -1px 0 0 #ffffff !important;
+}
+
+.foot a {
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000,
+    2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000, -2px 2px 0 #000000,
+    -2px 0 0 #000000;
+  background-color: transparent;
+}

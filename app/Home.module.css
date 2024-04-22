@@ -1,0 +1,50 @@
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  /* min-height: 1000px; */
+}
+.heroContainer {
+  margin-block: 40px;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  min-width: 1050px;
+  min-height: 900px;
+}
+#heroHeader {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  top: 20;
+}
+.content {
+  z-index: 0;
+  color: #ffffff;
+  font-size: 350%;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000,
+    2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000;
+}
+
+p.indexContent {
+  /* font-weight: 550; */
+  /* text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
+      1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000; */
+  color: #ffffff !important;
+}
+
+@media (max-width: 1300px) {
+  .content {
+    font-size: 250%;
+  }
+  img.content {
+    height: 80px !important;
+    width: 80px !important;
+  }
+}
