@@ -8,15 +8,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Contact", href: "/contact" },
+  { id: 1, name: "Home", path: "/" },
+  { id: 2, name: "About", path: "/about" },
+  { id: 3, name: "Services", path: "/services" },
+  { id: 4, name: "Contact", path: "/contact" },
 ];
-
-export default function Footer() {
+const Footer = () => {
   const pathname = usePathname();
-
+  const isActive = (path) => path === pathname;
   return (
     <div>
       <footer>
@@ -28,41 +27,21 @@ export default function Footer() {
           className="logo"
         />
         <ul>
-          <li className="foot">
-            {navLinks.map((link) => {
-              const isActive = pathname.startsWith(link.href);
-
-              return (
+          {navLinks.map((link) => {
+            return (
+              <li key={link.id} className="foot">
                 <Link
-                  href={link.href}
-                  key={link.name}
-                  className={isActive ? "footerActive" : ""}
+                  href={link.path}
+                  className={isActive(link.path) ? "footerActive" : ""}
                 >
                   {link.name}
-                </Link>
-              );
-            })}
-          </li>
-          {/* <li className="foot">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="foot">
-            <Link href="/about">About</Link>
-          </li>{" "}
-          <li className="foot">
-            <Link href="/services">Services</Link>
-          </li>{" "}
-          <li className="foot">
-            <Link href="/contact">Contact</Link>
-          </li>{" "} */}
-          {/* <a
-          href="https://www.facebook.com/Perthgardenandlawn"
-          className="footerFacebook"
-        >
-          <Image src={facebook} alt="facebook" className="Facebook" />
-        </a> */}
+                </Link>{" "}
+              </li>
+            );
+          })}
         </ul>
       </footer>
     </div>
   );
-}
+};
+export default Footer;
