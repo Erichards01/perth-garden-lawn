@@ -5,10 +5,18 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../public/LogoComplete.jpg";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Contact", href: "/contact" },
+];
 
 export default function Footer() {
-  const router = useRouter();
+  const pathname = usePathname();
+
   return (
     <div>
       <footer>
@@ -21,37 +29,32 @@ export default function Footer() {
         />
         <ul>
           <li className="foot">
-            <Link
-              className={router.pathname == "/" ? "footerActive" : ""}
-              href="/"
-            >
-              Home
-            </Link>
+            {navLinks.map((link) => {
+              const isActive = pathname.startsWith(link.href);
+
+              return (
+                <Link
+                  href={link.href}
+                  key={link.name}
+                  className={isActive ? "footerActive" : ""}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
+          </li>
+          {/* <li className="foot">
+            <Link href="/">Home</Link>
           </li>
           <li className="foot">
-            <Link
-              className={router.pathname == "/about" ? "footerActive" : ""}
-              href="/about"
-            >
-              About
-            </Link>
+            <Link href="/about">About</Link>
           </li>{" "}
           <li className="foot">
-            <Link
-              className={router.pathname == "/services" ? "footerActive" : ""}
-              href="/services"
-            >
-              Services
-            </Link>
+            <Link href="/services">Services</Link>
           </li>{" "}
           <li className="foot">
-            <Link
-              className={router.pathname == "/contact" ? "footerActive" : ""}
-              href="/contact"
-            >
-              Contact
-            </Link>
-          </li>{" "}
+            <Link href="/contact">Contact</Link>
+          </li>{" "} */}
           {/* <a
           href="https://www.facebook.com/Perthgardenandlawn"
           className="footerFacebook"
