@@ -145,3 +145,7 @@ nav {
     -2px 0 0 #000000;
   background-color: transparent;
 }
+
+a.fbLink:hover {
+  color: blue;
+}
