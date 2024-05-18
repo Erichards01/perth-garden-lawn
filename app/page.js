@@ -46,11 +46,12 @@ export default function Home() {
           }}
         />
       </div>
-      <p className={styles.indexContent}>
-        Fully Insured Business <br />
-        Old Fashioned Service <br />
-        Competitive Rates
-      </p>
+      
+      <div className={styles.indexContent}>
+        <p>Fully Insured Business</p> 
+        <p> Quality Work </p> 
+        <p> Competitive Rates</p> 
+      </div>
     </>
   );
 }

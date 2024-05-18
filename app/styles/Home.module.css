@@ -6,7 +6,7 @@
   /* min-height: 1000px; */
 }
 .heroContainer {
-  margin-block: 40px;
+  /* margin-block: 40px; */
   height: 90vh;
   position: relative;
   display: flex;
@@ -32,11 +32,21 @@
     2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000;
 }
 
-p.indexContent {
-  /* font-weight: 550; */
+
+.indexContent {
+   font-weight: 550;
   /* text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
       1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000; */
   color: #ffffff !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+  margin: 40px 0;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
 
 @media (max-width: 1300px) {

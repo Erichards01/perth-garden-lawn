@@ -5,18 +5,18 @@ export default function contact() {
   return (
     <>
       <div>
-        <p className={styles.indexContent}>
-          Phone: 0450 225 113 <br />
-          email: perthlawn@gmail.com <br />
-          Check out our facebook page for update
+        <div className={styles.indexContent}>
+        <p>  Phone: 0450 225 113 </p>
+        <p> email: perthlawn@gmail.com </p>
+        <p>Check out our facebook page for update
           <a
             className="fbLink"
             href="https://www.facebook.com/Perthgardenandlawn"
           >
             {" "}
             CLICK HERE{" "}
-          </a>
-        </p>
+          </a></p>
+        </div>
       </div>
     </>
   );

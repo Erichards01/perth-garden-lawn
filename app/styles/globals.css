@@ -121,7 +121,11 @@ nav {
   height: 72%;
   width: auto;
 }
-
+.Facebook:hover{
+  height: 85%;
+ 
+  transition: 2s;
+}
 .aFacebook {
   display: flex;
   align-content: center;
