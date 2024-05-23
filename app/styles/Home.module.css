@@ -32,6 +32,14 @@
     2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000;
 }
 
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+}
 
 .indexContent {
    font-weight: 550;

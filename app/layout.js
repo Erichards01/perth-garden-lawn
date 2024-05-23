@@ -1,3 +1,4 @@
+
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import Navbar from "./components/Navbar";
@@ -10,13 +11,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
+  return (<html lang="en"> <body>
     <div className="container">
       <div className={inter.className}>
         <Navbar />
         <div className="content-wrap"> {children}</div>
         <Footer />
       </div>
-    </div>
+    </div></body></html>
   );
 }

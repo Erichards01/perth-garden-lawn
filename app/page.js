@@ -1,11 +1,21 @@
+// "use client"
+
 import styles from "./styles/Home.module.css";
 import Image from "next/image";
 import heroImg from "../public/Lawn3.jpg";
 import logoMower from "../public/LogoMower.jpg";
 import logoLeaf from "../public/LogoLeaf.jpg";
 import logoBin from "../public/LogoBin.jpg";
+// import { motion } from "framer";
+import HeaderAnimation from "./components/HeaderAnimation";
 
-export default function Home() {
+
+
+// const header ="AAA Perth Garden and Lawn Services"
+
+
+export default function Home() {   
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -30,9 +40,14 @@ export default function Home() {
           className={styles.content}
           style={{ height: "100px", width: "100px", marginRight: "20px" }}
         />
-        <h1 className={styles.content} id={styles.heroHeader}>
-          Perth Garden and Lawn Services
-        </h1>{" "}
+        <HeaderAnimation />
+        {/* <motion.div  className={styles.content} id={styles.heroHeader}
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 2.5, delay: 0, ease: "easeOut"}}>
+          <h1>
+          Perth Garden and Lawn Services</h1>
+       </motion.div> */}
         <Image
           src={heroImg}
           placeholder="blur"
