@@ -1,10 +1,15 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
+import HeaderAnimation from "../components/HeaderAnimation";
+
+const header = "About"
 
 export default function about() {
   return (
+    
     <>
-      <div>about</div>
+    <title>{header}</title>
+      <HeaderAnimation header={header}/>
       <div className={styles.indexContent}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
         sollicitudin ligula mi, vitae interdum augue aliquet ac. Etiam pulvinar

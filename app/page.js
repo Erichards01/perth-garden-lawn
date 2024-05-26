@@ -10,14 +10,14 @@ import logoBin from "../public/LogoBin.jpg";
 import HeaderAnimation from "./components/HeaderAnimation";
 
 
+const header = "Perth Garden and Lawn Services"
 
-// const header ="AAA Perth Garden and Lawn Services"
 
 
 export default function Home() {   
 
   return (
-    <>
+    <><title>{header}</title>
       <div className={styles.heroContainer}>
         <Image
           src={logoMower}
@@ -40,7 +40,7 @@ export default function Home() {
           className={styles.content}
           style={{ height: "100px", width: "100px", marginRight: "20px" }}
         />
-        <HeaderAnimation />
+        <HeaderAnimation header={header} />
         {/* <motion.div  className={styles.content} id={styles.heroHeader}
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
