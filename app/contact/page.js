@@ -4,6 +4,8 @@ import HeaderAnimation from "../components/HeaderAnimation";
 
 const header = "Contact"
 
+
+
 export default function contact() {
   return (
     <><title>{header}</title>
