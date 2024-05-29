@@ -43,8 +43,8 @@
 
 .indexContent {
    font-weight: 550;
-  /* text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
-      1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000; */
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
+      1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   color: #ffffff !important;
   display: flex;
   flex-direction: column;
@@ -55,6 +55,29 @@
   flex-wrap: wrap;
   align-items: center;
 
+}
+
+.servicesContent {
+  font-weight: 550;
+ text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
+     1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+ color: #ffffff !important;
+ 
+
+}
+
+.servicePics{
+  flex: 0 0 33%;
+ width: 33%;
+  padding: 20px;
+}
+
+.row{display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-around;
+ height: fit-content;
 }
 
 @media (max-width: 1300px) {
