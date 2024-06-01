@@ -25,12 +25,12 @@ export default function HeaderAnimation({header}) {
     <motion.div  className={styles.content} id={styles.heroHeader}
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
-    transition={{duration: 8.5, delay: 0, ease: "easeOut"}}>
-      {<Link /> === "Perth Garden and Lawn Services"
+    transition={{duration: 3, delay: 0, ease: "easeOut"}}>
+      {header === "Perth Garden and Lawn Services"
       ?
-  <h1 style={{backgroundColor: "black"}}>{header}</h1> 
+  <h1 style={{backgroundColor: "transparent"}}>{header}</h1> 
   :
-  <h1 style={{backgroundColor: "#51983c "}}>{header}</h1>  }
+  <h1 style={{backgroundColor: "#006525 ", marginTop: "20px"}}>{header}</h1>  }
    </motion.div>
   )
 }
