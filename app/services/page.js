@@ -24,8 +24,8 @@ export default function services() {
       src={LawnMower1}    alt="Rotary Mower"
       className={styles.servicePics}
       
-      />
-      <p className={styles.serviceParagraph}>Cylinder & Rotary Mowing </p> <Image 
+      /><p className={styles.serviceSubHeaders}>Cylinder & Rotary Mowing </p>
+       <Image 
       src={LawnMower2}    alt="Cylinder Mower"
       className={styles.servicePics}
       
@@ -35,8 +35,8 @@ export default function services() {
       src={Planting}    alt="Plant pulled out of pot"
       className={styles.servicePics}
       
-      />
-      <p className={styles.serviceParagraph}>Gardending/Landscaping </p> <Image 
+      /><p className={styles.serviceSubHeaders}>Gardending/Landscaping </p>
+       <Image 
       src={Gardening}    alt="Hedge trimming hedge"
       className={styles.servicePics}
       
@@ -44,7 +44,7 @@ export default function services() {
       src={GreenWaste}    alt="Lawn clippings in bin"
       className={styles.servicePics}
       
-      /> <p className={styles.serviceParagraph}>Green Waste Removal</p> <Image 
+      /><p className={styles.serviceSubHeaders}>Green Waste Removal</p>  <Image 
       src={GardenBag}    alt="Lawn clippings in garden bag"
       className={styles.servicePics}
       
@@ -53,7 +53,7 @@ export default function services() {
       src={Boxes}    alt="Cardboard boxes in truck"
       className={styles.servicePics}
       
-      /><p className={styles.serviceParagraph}>Rubbish Removal</p><Image 
+      /><p className={styles.serviceSubHeaders}>Rubbish Removal</p><Image 
       src={GarbageCan}    alt="Green garbage can"
       className={styles.servicePics}
       

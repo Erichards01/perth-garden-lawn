@@ -17,7 +17,7 @@ const header = "Perth Garden and Lawn Services"
 export default function Home() {   
 
   return (
-    <><title>{header}</title>
+    <><title>{header }</title>
       <div className={styles.heroContainer}>
         <Image
           src={logoMower}

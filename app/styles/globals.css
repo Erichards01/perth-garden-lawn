@@ -54,7 +54,7 @@ li a:hover {
 }
 
 html {
-  background-color: rgb(0, 67, 8);
+  background-color: #FFFFFF;
   min-width: 1050px;
 }
 body {
@@ -133,8 +133,13 @@ nav {
 }
 .content-wrap {
   padding-bottom: 10vh;
-}
 
+
+}
+h1 {
+  padding: 0 20px 0px 20px;
+  /* background-color: #51983c ; */
+border-radius: 15px;}
 .footerActive {
   color: #000000 !important;
   text-shadow: -1px -1px 0 #ffffff, 0 -1px 0 #ffffff, 1px -1px 0 #ffffff,

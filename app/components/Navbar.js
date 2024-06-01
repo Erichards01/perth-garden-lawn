@@ -9,6 +9,8 @@ import logo from "../../public/LogoComplete.jpg";
 
 export default function Navbar() {
   return (
+
+    
     <div>
       <nav>
         <Image
