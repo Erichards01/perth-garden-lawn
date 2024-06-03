@@ -77,11 +77,13 @@
   max-height: 45vh;
   width: auto;
   margin: auto;
- padding: 20px;
- background-color: 	#51983c;
- border-radius: 20px;
+ /* padding: 20px; */
+ /* background-color: 	#c2c2c2e3;
+ border-radius: 20px; */
 
- 
+ box-shadow: 8px 8px 18px 0px rgba(0,0,0,0.6);
+  
+
 }
 .row{
  display: grid;
@@ -105,9 +107,13 @@ width: 70vw;}
  padding: 20px;
    margin: auto;
    font-size: larger;
-   background-color: #006525;border-radius: 15px;
+    /* background-image: radial-gradient(#006525 52%, #000000 120%);
+    border: 5px solid #c2c2c2e3;
+    border-radius: 10px; */
+background-color: 	#4F7942;
+border-radius: 10px;box-shadow: 8px 8px 18px 0px rgba(0,0,0,0.6);
   }
-
+/* border-radius: 15px; */
 @media (max-width: 1300px) {
   .content {
     font-size: 250%;

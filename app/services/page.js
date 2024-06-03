@@ -10,10 +10,27 @@ import GarbageCan from "../../public/GarbageCan.jpg"
 import GardenBag from "../../public/GardenBag1.jpg"
 import GreenWaste from "../../public/GreenWaste.jpg"
 import Boxes from "../../public/RemovalBoxes.jpeg"
+import SubHeaderAnimation from "../components/SubHeaderAnimation";
+import Head from "next/head";
+// import { split } from "postcss/lib/list";
+
+
 
 const header = "Services"
 
+// const subHeaders =[{id:1 ,sub:"Cylinder & Rotary Mowing"}, {id:2 ,sub:"Gardending/Landscaping"}, {id:3 ,sub:"Green Waste Removal"}, {id:4 ,sub:"Rubbish Removal"}];
+
+const subHeaders =['Cylinder & Rotary Mowing', 'Gardending/Landscaping', 'Green Waste Removal', 'Rubbish Removal']
+// const subList = subHeaders.split("," );
+// const sub = subList.map((subList, index) => (
+//   <li key={index}>{subList}</li>
+// ));
+
 export default function services() {
+ 
+// const sub = subHeaders.map((subHead, index) => (
+//   <li key={index}>{subHead}</li>));
+
   return (
     <>
       <title>{header}</title>
@@ -24,7 +41,7 @@ export default function services() {
       src={LawnMower1}    alt="Rotary Mower"
       className={styles.servicePics}
       
-      /><p className={styles.serviceSubHeaders}>Cylinder & Rotary Mowing </p>
+      />< SubHeaderAnimation   subHeaders={subHeaders.slice(0, 1)}/>
        <Image 
       src={LawnMower2}    alt="Cylinder Mower"
       className={styles.servicePics}
@@ -35,7 +52,7 @@ export default function services() {
       src={Planting}    alt="Plant pulled out of pot"
       className={styles.servicePics}
       
-      /><p className={styles.serviceSubHeaders}>Gardending/Landscaping </p>
+      />< SubHeaderAnimation subHeaders={subHeaders.slice(1, 2)} /> 
        <Image 
       src={Gardening}    alt="Hedge trimming hedge"
       className={styles.servicePics}
@@ -44,7 +61,7 @@ export default function services() {
       src={GreenWaste}    alt="Lawn clippings in bin"
       className={styles.servicePics}
       
-      /><p className={styles.serviceSubHeaders}>Green Waste Removal</p>  <Image 
+      />< SubHeaderAnimation subHeaders={subHeaders.slice(2, 3)}/>  <Image 
       src={GardenBag}    alt="Lawn clippings in garden bag"
       className={styles.servicePics}
       
@@ -53,7 +70,7 @@ export default function services() {
       src={Boxes}    alt="Cardboard boxes in truck"
       className={styles.servicePics}
       
-      /><p className={styles.serviceSubHeaders}>Rubbish Removal</p><Image 
+      />< SubHeaderAnimation subHeaders={subHeaders.slice(3, 4)}/><Image 
       src={GarbageCan}    alt="Green garbage can"
       className={styles.servicePics}
       
