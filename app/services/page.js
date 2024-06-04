@@ -19,7 +19,7 @@ import Head from "next/head";
 const header = "Services"
 
 // const subHeaders =[{id:1 ,sub:"Cylinder & Rotary Mowing"}, {id:2 ,sub:"Gardending/Landscaping"}, {id:3 ,sub:"Green Waste Removal"}, {id:4 ,sub:"Rubbish Removal"}];
-
+const paragraphStyles ={ color: "red"}
 const subHeaders =['Cylinder & Rotary Mowing', 'Gardending/Landscaping', 'Green Waste Removal', 'Rubbish Removal']
 // const subList = subHeaders.split("," );
 // const sub = subList.map((subList, index) => (
@@ -41,12 +41,15 @@ export default function services() {
       src={LawnMower1}    alt="Rotary Mower"
       className={styles.servicePics}
       
-      />< SubHeaderAnimation   subHeaders={subHeaders.slice(0, 1)}/>
+      />< SubHeaderAnimation  subHeaders={subHeaders.slice(0, 1)} /><p className={styles.serviceP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      sollicitudin ligula mi, vitae interdum augue aliquet ac. Etiam pulvinar
+      eget nulla eget aliquet. </p>
        <Image 
       src={LawnMower2}    alt="Cylinder Mower"
       className={styles.servicePics}
       
-      />
+      /> 
+     
     </div><div className={styles.row}>
     <Image 
       src={Planting}    alt="Plant pulled out of pot"

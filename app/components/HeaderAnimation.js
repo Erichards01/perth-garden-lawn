@@ -28,7 +28,7 @@ export default function HeaderAnimation({header}) {
     transition={{duration: 2, delay: 0, ease: "easeOut"}}>
       {header === "Perth Garden and Lawn Services"
       ?
-  <h1 style={{backgroundColor: "transparent"}}>{header}</h1> 
+  <h1 style={{backgroundColor: "transparent", boxShadow: "none"}}>{header}</h1> 
   :
   <h1 style={{backgroundColor: "	#4F7942 ", marginTop: "20px"}}>{header}</h1>  }
    </motion.div>
