@@ -56,7 +56,9 @@ export default function services() {
       className={styles.servicePics}
       
       />< SubHeaderAnimation subHeaders={subHeaders.slice(1, 2)} /> 
-       <Image 
+      <p className={styles.serviceP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      sollicitudin ligula mi, vitae interdum augue aliquet ac. Etiam pulvinar
+      eget nulla eget aliquet. </p> <Image 
       src={Gardening}    alt="Hedge trimming hedge"
       className={styles.servicePics}
       
@@ -64,7 +66,9 @@ export default function services() {
       src={GreenWaste}    alt="Lawn clippings in bin"
       className={styles.servicePics}
       
-      />< SubHeaderAnimation subHeaders={subHeaders.slice(2, 3)}/>  <Image 
+      />< SubHeaderAnimation subHeaders={subHeaders.slice(2, 3)}/> <p className={styles.serviceP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      sollicitudin ligula mi, vitae interdum augue aliquet ac. Etiam pulvinar
+      eget nulla eget aliquet. </p> <Image 
       src={GardenBag}    alt="Lawn clippings in garden bag"
       className={styles.servicePics}
       
@@ -73,7 +77,9 @@ export default function services() {
       src={Boxes}    alt="Cardboard boxes in truck"
       className={styles.servicePics}
       
-      />< SubHeaderAnimation subHeaders={subHeaders.slice(3, 4)}/><Image 
+      />< SubHeaderAnimation subHeaders={subHeaders.slice(3, 4)}/><p className={styles.serviceP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      sollicitudin ligula mi, vitae interdum augue aliquet ac. Etiam pulvinar
+      eget nulla eget aliquet. </p><Image 
       src={GarbageCan}    alt="Green garbage can"
       className={styles.servicePics}
       

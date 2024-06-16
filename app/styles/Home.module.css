@@ -71,20 +71,15 @@
 }
 
 .servicePics{
-
   grid-row: 1 / span 2;
-  flex: 0 0 auto;
-  
-  width: max-content;
-  /* padding: 20px; */
-  /* align-self: center; */
-  height: inherit;
-  
- /* padding: 20px; */
- /* background-color: 	#c2c2c2e3;
- border-radius: 7px;
+  width: 100%;
+ 
+  height: 100%;
+  object-fit: cover;
 
- box-shadow: 8px 8px 18px 0px rgba(0,0,0,0.6); */
+  align-self: center;
+
+  overflow: hidden;
  
 
 }
@@ -94,7 +89,8 @@
 overflow: hidden;
  gap: 10px;
  margin: 40px;
-height: 30vh;
+/* height: 30vh; */
+height: 280px;
 width: 70vw;
 box-shadow: 8px 8px 18px 0px rgba(0,0,0,0.6);}
  
@@ -111,7 +107,7 @@ box-shadow: 8px 8px 18px 0px rgba(0,0,0,0.6);}
   margin: auto;
  padding: 20px;
    margin: auto;
-   font-size: larger;
+   font-size: 1.4vw;
    /* grid-row: 1/1 ; */
     /* background-image: radial-gradient(#006525 52%, #000000 120%);
     border: 5px solid #c2c2c2e3;
@@ -124,7 +120,15 @@ grid-row: 1;
 
   .serviceP{grid-row: 2 ;
     padding:0 30px ;
-    
+    width: 100%;
+ 
+    height: 100%;
+    object-fit: cover;
+  
+    align-self: center;
+  
+    overflow: hidden;
+    font-size: 0.9vw;
  }
 /* border-radius: 15px; */
 @media (max-width: 1300px) {
